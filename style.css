@@ -1,0 +1,43 @@
+
+
+
+:root {
+/* ### Primary */
+
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+
+/* ### Neutral */
+
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+@media screen and (max-width: 640px){
+    #nav {
+        display: none;
+        position: absolute;
+        top: 3%;
+        right: 0%;
+        left: 0%;
+        margin-inline: auto;
+        padding: 1rem;
+        width: 20rem;
+        height: 15rem;
+        text-align: center;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        z-index: 100;
+    }
+    #nav.active {
+        display: block;
+    }
+    #nav li {
+        padding-block: 0.5rem;
+    }
+    .hamburger.active {
+        display: block;
+    }
+}
