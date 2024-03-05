@@ -101,9 +101,9 @@
       <div class="lg:mx-24 mb-5">
         <h1 class="text-blue-950 lg:w-10/12 flex justify-center mx-auto font-bold text-3xl my-16 max-sm:w-full text-center">What they’ve said</h1>
 
-        <div class="lg:flex gap-10 items-center max-sm:block md:mx-10">
+        <div class="lg:flex gap-10 items-center max-sm:flex md:mx-10">
 
-          <div class="block max-sm:mt-6">
+          <div class="block max-sm:mt-6 slider max-sm:hidden active">
             <img src="images/avatar-anisha.png" class="mx-auto -mb-16">
             <div class="bg-gray-200 p-3 max-sm:mx-10">
               <h1 class="text-blue-950 lg:w-10/12 font-bold text-3xl mt-16 max-sm:w-full flex mx-auto justify-center">Anisha Li</h1>
@@ -114,7 +114,7 @@
             </div>
           </div>
 
-          <div class="block max-sm:mt-6">
+          <div class="block max-sm:mt-6 slider max-sm:hidden">
             <img src="images/avatar-ali.png" class="mx-auto -mb-16">
             <div class="bg-gray-200 p-3 max-sm:mx-10">
               <h1 class="text-blue-950 lg:w-10/12 font-bold text-3xl mt-16 max-sm:w-full flex mx-auto justify-center">Ali Bravo</h1>
@@ -126,7 +126,7 @@
             </div>
           </div>
 
-          <div class="block max-sm:justify-center max-sm:mt-6">
+          <div class="block max-sm:justify-center max-sm:mt-6 slider max-sm:hidden">
             <img src="images/avatar-richard.png" class="mx-auto -mb-16">
             <div class="bg-gray-200 p-3 max-sm:mx-10">
               <h1 class="text-blue-950 lg:w-10/12 font-bold text-3xl mt-16 max-sm:w-full flex mx-auto justify-center">Richard Watts</h1>
@@ -137,8 +137,8 @@
             </div>
           </div>
 
-          <div class="block max-sm:mt-6 lg:hidden">
-            <img src="images/avatar-shanai.png" class="mx-auto -mb-16">
+          <div class="block max-sm:mt-6 lg:hidden slider max-sm:hidden">
+            <img src="images/avatar-shanai.png" class="mx-auto -mb-16 ">
             <div class="bg-gray-200 p-3 max-sm:mx-10">
               <h1 class="text-blue-950 lg:w-10/12 font-bold text-3xl mt-16 max-sm:w-full flex mx-auto justify-center">Shanai Gough</h1>
               <p class="mt-4 text-[17px] text-center text-gray-500">
@@ -147,6 +147,12 @@
               </p>
             </div>
           </div>
+        </div>
+        <div class="lg:hidden mt-3 flex justify-center gap-3 ">
+          <span class="bg-red-300 w-3 h-3 flex justify-center rounded-full cursor-pointer index active"></span>
+          <span class="bg-red-300 w-3 h-3 flex justify-center rounded-full cursor-pointer index"></span>
+          <span class="bg-red-300 w-3 h-3 flex justify-center rounded-full cursor-pointer index"></span>
+          <span class="bg-red-300 w-3 h-3 flex justify-center rounded-full cursor-pointer index"></span>
         </div>
         <button class="bg-red-400 text-white flex justify-center mx-auto py-2 px-4 rounded-full text-sm hover:bg-red-500 font-bold mt-10">Get Started</button>
       </div>

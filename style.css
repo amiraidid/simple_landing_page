@@ -40,4 +40,13 @@
     .hamburger.active {
         display: block;
     }
+    .slider {
+        display: none;
+    }
+    .slider.active {
+        display: block;
+    }
+    .index.active {
+        background-color: hsl(12, 88%, 59%);
+    }
 }

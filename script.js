@@ -29,6 +29,26 @@ goBtn.addEventListener('click', () => {
 
 })
 
+// slider or coursol section
 
+const slider = document.querySelectorAll('.slider');
+const index = document.querySelectorAll('.index');
 
+ChangeSlide();
+
+function ChangeSlide() {
+    index.forEach((btn, ind) => {
+        btn.addEventListener('click', () => {
+            for (const ele of index) {
+                ele.classList.remove('active');
+            }
+            for (let i = 0; i < slider.length; i++) {
+                slider[i].classList.remove('active');
+            }
+            slider[ind].classList.add('active');
+            btn.classList.add('active');
+            
+        })
+    })
+}
 
